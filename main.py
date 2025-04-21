@@ -3,12 +3,9 @@ from fastapi import FastAPI, HTTPException
 from typing import Optional, List
 from pydantic import BaseModel
 
-
 """ЭТО Объект"""
 
-
 app = FastAPI()
-
 
 """Это Класс!!!"""
 
@@ -19,15 +16,15 @@ class Post(BaseModel):
     body: str
 
 
+"""Это Объект"""
 posts = [
     {'id': 1, 'title': 'New 1', 'body': 'Text 1'},
     {'id': 2, 'title': 'New 2', 'body': 'Text 2'},
     {'id': 3, 'title': 'New 3', 'body': 'Text 3'},
+    {'id': 4, 'title': 'New 4', 'body': 'Text 4'},
 ]
 
-"""Это просто более сложный вариант items НЕТ никаких плюсов, если что это страницы !!!"""
-
-
+"""Это просто более сложный вариант items НЕТ никаких плюсов, если что это URL-страницы !!!"""
 # @app.get("/items")
 # async def items() -> List[Post]:
 #     post_objects = []
